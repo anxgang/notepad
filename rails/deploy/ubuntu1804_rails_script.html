@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Rails Ubuntu Deploy Script | notepad</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    <link rel="icon" href="/notepad/favicon.ico">
+    <meta name="description" content="一個小小筆記本">
+    <link rel="preload" href="/notepad/assets/css/0.styles.e4f7a2f2.css" as="style"><link rel="preload" href="/notepad/assets/js/app.abc900cd.js" as="script"><link rel="preload" href="/notepad/assets/js/2.de767da7.js" as="script"><link rel="preload" href="/notepad/assets/js/48.82431801.js" as="script"><link rel="prefetch" href="/notepad/assets/js/10.b2c06949.js"><link rel="prefetch" href="/notepad/assets/js/11.c9e2691f.js"><link rel="prefetch" href="/notepad/assets/js/12.63f79b42.js"><link rel="prefetch" href="/notepad/assets/js/13.f7af4e8d.js"><link rel="prefetch" href="/notepad/assets/js/14.31b24aa9.js"><link rel="prefetch" href="/notepad/assets/js/15.ee275869.js"><link rel="prefetch" href="/notepad/assets/js/16.baece4fe.js"><link rel="prefetch" href="/notepad/assets/js/17.40bc1197.js"><link rel="prefetch" href="/notepad/assets/js/18.1c6f3d85.js"><link rel="prefetch" href="/notepad/assets/js/19.ffd304a8.js"><link rel="prefetch" href="/notepad/assets/js/20.d16e10f7.js"><link rel="prefetch" href="/notepad/assets/js/21.9bf663a6.js"><link rel="prefetch" href="/notepad/assets/js/22.a96f91d1.js"><link rel="prefetch" href="/notepad/assets/js/23.d82ddc41.js"><link rel="prefetch" href="/notepad/assets/js/24.cbdef2f9.js"><link rel="prefetch" href="/notepad/assets/js/25.236bf007.js"><link rel="prefetch" href="/notepad/assets/js/26.42754cbe.js"><link rel="prefetch" href="/notepad/assets/js/27.69e3f6e3.js"><link rel="prefetch" href="/notepad/assets/js/28.917a0ffd.js"><link rel="prefetch" href="/notepad/assets/js/29.a5dfebe9.js"><link rel="prefetch" href="/notepad/assets/js/3.b28a5640.js"><link rel="prefetch" href="/notepad/assets/js/30.f3254c32.js"><link rel="prefetch" href="/notepad/assets/js/31.3671faaa.js"><link rel="prefetch" href="/notepad/assets/js/32.156d06d3.js"><link rel="prefetch" href="/notepad/assets/js/33.82cadb70.js"><link rel="prefetch" href="/notepad/assets/js/34.c1b3533d.js"><link rel="prefetch" href="/notepad/assets/js/35.14bbedca.js"><link rel="prefetch" href="/notepad/assets/js/36.1d786d21.js"><link rel="prefetch" href="/notepad/assets/js/37.ae49daca.js"><link rel="prefetch" href="/notepad/assets/js/38.14c91a38.js"><link rel="prefetch" href="/notepad/assets/js/39.949464aa.js"><link rel="prefetch" href="/notepad/assets/js/4.f36ccaf5.js"><link rel="prefetch" href="/notepad/assets/js/40.ac472316.js"><link rel="prefetch" href="/notepad/assets/js/41.2aa5b49e.js"><link rel="prefetch" href="/notepad/assets/js/42.082133ed.js"><link rel="prefetch" href="/notepad/assets/js/43.2c454234.js"><link rel="prefetch" href="/notepad/assets/js/44.3e01dbc8.js"><link rel="prefetch" href="/notepad/assets/js/45.c1b3a767.js"><link rel="prefetch" href="/notepad/assets/js/46.1b528671.js"><link rel="prefetch" href="/notepad/assets/js/47.fa275e25.js"><link rel="prefetch" href="/notepad/assets/js/49.26b95970.js"><link rel="prefetch" href="/notepad/assets/js/5.d8810cd1.js"><link rel="prefetch" href="/notepad/assets/js/50.080a8b89.js"><link rel="prefetch" href="/notepad/assets/js/51.eb4ba65f.js"><link rel="prefetch" href="/notepad/assets/js/52.9b2ec4b6.js"><link rel="prefetch" href="/notepad/assets/js/53.b9291662.js"><link rel="prefetch" href="/notepad/assets/js/54.adf368fd.js"><link rel="prefetch" href="/notepad/assets/js/55.7b43fc99.js"><link rel="prefetch" href="/notepad/assets/js/56.40f4e551.js"><link rel="prefetch" href="/notepad/assets/js/57.283e1e67.js"><link rel="prefetch" href="/notepad/assets/js/58.60dd1afe.js"><link rel="prefetch" href="/notepad/assets/js/59.f1434f61.js"><link rel="prefetch" href="/notepad/assets/js/6.466d8455.js"><link rel="prefetch" href="/notepad/assets/js/7.f05a3669.js"><link rel="prefetch" href="/notepad/assets/js/8.5d885b12.js"><link rel="prefetch" href="/notepad/assets/js/9.5e35ba9f.js">
+    <link rel="stylesheet" href="/notepad/assets/css/0.styles.e4f7a2f2.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/notepad/" class="home-link router-link-active"><!----> <span class="site-name">notepad</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/notepad/git/" class="nav-link">
+  Git
+</a></div><div class="nav-item"><a href="/notepad/ruby/" class="nav-link">
+  Ruby
+</a></div><div class="nav-item"><a href="/notepad/rails/" class="nav-link router-link-active">
+  Rails
+</a></div><div class="nav-item"><a href="/notepad/javascript/" class="nav-link">
+  Javascript
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="More" class="dropdown-title"><span class="title">More</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/notepad/roadmap/" class="nav-link">
+  開發者路線指引
+</a></li><li class="dropdown-item"><!----> <a href="/notepad/basic-for-web-developers/" class="nav-link">
+  網頁基礎(HTML&amp;CSS)
+</a></li><li class="dropdown-item"><!----> <a href="/notepad/fullstack-camp/" class="nav-link">
+  全棧營(Rails101)
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/notepad/git/" class="nav-link">
+  Git
+</a></div><div class="nav-item"><a href="/notepad/ruby/" class="nav-link">
+  Ruby
+</a></div><div class="nav-item"><a href="/notepad/rails/" class="nav-link router-link-active">
+  Rails
+</a></div><div class="nav-item"><a href="/notepad/javascript/" class="nav-link">
+  Javascript
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="More" class="dropdown-title"><span class="title">More</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/notepad/roadmap/" class="nav-link">
+  開發者路線指引
+</a></li><li class="dropdown-item"><!----> <a href="/notepad/basic-for-web-developers/" class="nav-link">
+  網頁基礎(HTML&amp;CSS)
+</a></li><li class="dropdown-item"><!----> <a href="/notepad/fullstack-camp/" class="nav-link">
+  全棧營(Rails101)
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Gem</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/notepad/rails/gem/prawn.html" class="sidebar-link">prawn</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Deploy</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/notepad/rails/deploy/ubuntu1804_rails_script.html" aria-current="page" class="active sidebar-link">Rails Ubuntu Deploy Script</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/notepad/rails/deploy/ubuntu1804_rails_script.html#零、版本號" class="sidebar-link">零、版本號</a></li><li class="sidebar-sub-header"><a href="/notepad/rails/deploy/ubuntu1804_rails_script.html#一、設定" class="sidebar-link">一、設定</a></li><li class="sidebar-sub-header"><a href="/notepad/rails/deploy/ubuntu1804_rails_script.html#二、安裝" class="sidebar-link">二、安裝</a></li><li class="sidebar-sub-header"><a href="/notepad/rails/deploy/ubuntu1804_rails_script.html#三、檢查" class="sidebar-link">三、檢查</a></li><li class="sidebar-sub-header"><a href="/notepad/rails/deploy/ubuntu1804_rails_script.html#四、可選項目" class="sidebar-link">四、可選項目</a></li><li class="sidebar-sub-header"><a href="/notepad/rails/deploy/ubuntu1804_rails_script.html#五、防火牆" class="sidebar-link">五、防火牆</a></li></ul></li><li><a href="/notepad/rails/deploy/digitalocean_new_server_config.html" class="sidebar-link">Rails DigitalOcean deploy</a></li><li><a href="/notepad/rails/deploy/03.html" class="sidebar-link">Rails Ubuntu Deploy</a></li><li><a href="/notepad/rails/deploy/04.html" class="sidebar-link">Linode StackScripts 範例</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Others</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/notepad/rails/others/migration.html" class="sidebar-link">Migration Cheat Sheet</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="rails-ubuntu-deploy-script"><a href="#rails-ubuntu-deploy-script" class="header-anchor">#</a> Rails Ubuntu Deploy Script</h1> <blockquote><p>Ubuntu18.04 Script 快速建立 Rails 環境</p></blockquote> <h2 id="零、版本號"><a href="#零、版本號" class="header-anchor">#</a> 零、版本號</h2> <ol><li>IP = 111.111.111.111</li> <li>Ruby = 2.5.1</li> <li>Bundler = 1.17.3</li> <li>Project_name = myapp</li></ol> <h2 id="一、設定"><a href="#一、設定" class="header-anchor">#</a> 一、設定</h2> <div class="custom-block tip"><p class="custom-block-title">提示</p> <p>需要替換 IP『111.111.111.111』</p></div> <div class="language- extra-class"><pre class="language-text"><code>ssh root@111.111.111.111
+adduser deploy
+adduser deploy sudo
+exit
+ssh-copy-id deploy@111.111.111.111
+ssh deploy@111.111.111.111
+</code></pre></div><h2 id="二、安裝"><a href="#二、安裝" class="header-anchor">#</a> 二、安裝</h2> <div class="custom-block tip"><p class="custom-block-title">提示</p> <p>需要替換 Ruby版本『2.5.1』 bundler版本『1.17.3』</p></div> <div class="language- extra-class"><pre class="language-text"><code>sudo timedatectl set-timezone Asia/Taipei &amp;&amp; \
+sudo locale-gen zh_TW zh_TW.UTF-8 &amp;&amp; \
+curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash - &amp;&amp; \
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add - &amp;&amp; \
+echo &quot;deb https://dl.yarnpkg.com/debian/ stable main&quot; | sudo tee /etc/apt/sources.list.d/yarn.list &amp;&amp; \
+sudo add-apt-repository -y ppa:chris-lea/redis-server &amp;&amp; \
+sudo apt-get update -y &amp;&amp; \
+sudo apt-get install -y git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev software-properties-common libffi-dev dirmngr gnupg imagemagick apt-transport-https ca-certificates redis-server redis-tools nodejs yarn &amp;&amp; \
+sudo \curl -sSL https://get.rvm.io | bash &amp;&amp; \
+source /home/deploy/.rvm/scripts/rvm  &amp;&amp; \
+rvm install 2.5.1  &amp;&amp; \
+rvm list  &amp;&amp; \
+gem install bundler -v 1.17.3 
+</code></pre></div><h2 id="三、檢查"><a href="#三、檢查" class="header-anchor">#</a> 三、檢查</h2> <div class="language- extra-class"><pre class="language-text"><code>date  &amp;&amp; \
+ruby -v  &amp;&amp; \
+bundle -v  
+</code></pre></div><h2 id="四、可選項目"><a href="#四、可選項目" class="header-anchor">#</a> 四、可選項目</h2> <h3 id="_1-nginx"><a href="#_1-nginx" class="header-anchor">#</a> 1. nginx</h3> <ol><li>安裝 nginx</li></ol> <div class="language- extra-class"><pre class="language-text"><code>sudo apt-get -y install nginx &amp;&amp; \
+</code></pre></div><ol start="2"><li>為專案建立 symlink</li></ol> <div class="custom-block tip"><p class="custom-block-title">提示</p> <p>需要替換『myapp』</p></div> <div class="language- extra-class"><pre class="language-text"><code>sudo rm /etc/nginx/sites-enabled/default &amp;&amp; \
+sudo ln -nfs &quot;/home/deploy/myapp/current/config/nginx.conf&quot; &quot;/etc/nginxsites-enabled/myapp&quot;  &amp;&amp; \
+ls -lah /etc/nginx/sites-enabled/myapp
+</code></pre></div><h3 id="_2-redis-server"><a href="#_2-redis-server" class="header-anchor">#</a> 2. redis server</h3> <div class="language- extra-class"><pre class="language-text"><code>sudo add-apt-repository -y ppa:chris-lea/redis-server &amp;&amp; \
+redis-server --daemonize yes
+</code></pre></div><h3 id="_3-postgresql"><a href="#_3-postgresql" class="header-anchor">#</a> 3. postgresql</h3> <ol><li>安裝 postgresql</li></ol> <div class="language- extra-class"><pre class="language-text"><code>sudo apt-get -y install postgresql postgresql-contrib libpq-dev &amp;&amp; \
+</code></pre></div><ol start="2"><li>postgresql 建立專案 db</li></ol> <div class="custom-block tip"><p class="custom-block-title">提示</p> <p>需要替換『myapp』</p></div> <div class="language- extra-class"><pre class="language-text"><code>sudo su - postgres &amp;&amp; \
+createuser --pwprompt deploy &amp;&amp; \
+createdb -O deploy myapp
+</code></pre></div><h2 id="五、防火牆"><a href="#五、防火牆" class="header-anchor">#</a> 五、防火牆</h2> <div class="language- extra-class"><pre class="language-text"><code>sudo ufw default deny incoming &amp;&amp; \
+sudo ufw default allow outgoing &amp;&amp; \
+sudo ufw allow ssh &amp;&amp; \
+sudo ufw allow http &amp;&amp; \
+sudo ufw allow https &amp;&amp; \
+echo y | sudo ufw enable
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">最後更新時間:</span> <span class="time">2020-8-9 9:56:19</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/notepad/rails/gem/prawn.html" class="prev">
+        prawn
+      </a></span> <span class="next"><a href="/notepad/rails/deploy/digitalocean_new_server_config.html">
+        Rails DigitalOcean deploy
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/notepad/assets/js/app.abc900cd.js" defer></script><script src="/notepad/assets/js/2.de767da7.js" defer></script><script src="/notepad/assets/js/48.82431801.js" defer></script>
+  </body>
+</html>

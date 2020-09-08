@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Rails Ubuntu Deploy | notepad</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    <link rel="icon" href="/notepad/favicon.ico">
+    <meta name="description" content="一個小小筆記本">
+    <link rel="preload" href="/notepad/assets/css/0.styles.e4f7a2f2.css" as="style"><link rel="preload" href="/notepad/assets/js/app.abc900cd.js" as="script"><link rel="preload" href="/notepad/assets/js/2.de767da7.js" as="script"><link rel="preload" href="/notepad/assets/js/45.c1b3a767.js" as="script"><link rel="prefetch" href="/notepad/assets/js/10.b2c06949.js"><link rel="prefetch" href="/notepad/assets/js/11.c9e2691f.js"><link rel="prefetch" href="/notepad/assets/js/12.63f79b42.js"><link rel="prefetch" href="/notepad/assets/js/13.f7af4e8d.js"><link rel="prefetch" href="/notepad/assets/js/14.31b24aa9.js"><link rel="prefetch" href="/notepad/assets/js/15.ee275869.js"><link rel="prefetch" href="/notepad/assets/js/16.baece4fe.js"><link rel="prefetch" href="/notepad/assets/js/17.40bc1197.js"><link rel="prefetch" href="/notepad/assets/js/18.1c6f3d85.js"><link rel="prefetch" href="/notepad/assets/js/19.ffd304a8.js"><link rel="prefetch" href="/notepad/assets/js/20.d16e10f7.js"><link rel="prefetch" href="/notepad/assets/js/21.9bf663a6.js"><link rel="prefetch" href="/notepad/assets/js/22.a96f91d1.js"><link rel="prefetch" href="/notepad/assets/js/23.d82ddc41.js"><link rel="prefetch" href="/notepad/assets/js/24.cbdef2f9.js"><link rel="prefetch" href="/notepad/assets/js/25.236bf007.js"><link rel="prefetch" href="/notepad/assets/js/26.42754cbe.js"><link rel="prefetch" href="/notepad/assets/js/27.69e3f6e3.js"><link rel="prefetch" href="/notepad/assets/js/28.917a0ffd.js"><link rel="prefetch" href="/notepad/assets/js/29.a5dfebe9.js"><link rel="prefetch" href="/notepad/assets/js/3.b28a5640.js"><link rel="prefetch" href="/notepad/assets/js/30.f3254c32.js"><link rel="prefetch" href="/notepad/assets/js/31.3671faaa.js"><link rel="prefetch" href="/notepad/assets/js/32.156d06d3.js"><link rel="prefetch" href="/notepad/assets/js/33.82cadb70.js"><link rel="prefetch" href="/notepad/assets/js/34.c1b3533d.js"><link rel="prefetch" href="/notepad/assets/js/35.14bbedca.js"><link rel="prefetch" href="/notepad/assets/js/36.1d786d21.js"><link rel="prefetch" href="/notepad/assets/js/37.ae49daca.js"><link rel="prefetch" href="/notepad/assets/js/38.14c91a38.js"><link rel="prefetch" href="/notepad/assets/js/39.949464aa.js"><link rel="prefetch" href="/notepad/assets/js/4.f36ccaf5.js"><link rel="prefetch" href="/notepad/assets/js/40.ac472316.js"><link rel="prefetch" href="/notepad/assets/js/41.2aa5b49e.js"><link rel="prefetch" href="/notepad/assets/js/42.082133ed.js"><link rel="prefetch" href="/notepad/assets/js/43.2c454234.js"><link rel="prefetch" href="/notepad/assets/js/44.3e01dbc8.js"><link rel="prefetch" href="/notepad/assets/js/46.1b528671.js"><link rel="prefetch" href="/notepad/assets/js/47.fa275e25.js"><link rel="prefetch" href="/notepad/assets/js/48.82431801.js"><link rel="prefetch" href="/notepad/assets/js/49.26b95970.js"><link rel="prefetch" href="/notepad/assets/js/5.d8810cd1.js"><link rel="prefetch" href="/notepad/assets/js/50.080a8b89.js"><link rel="prefetch" href="/notepad/assets/js/51.eb4ba65f.js"><link rel="prefetch" href="/notepad/assets/js/52.9b2ec4b6.js"><link rel="prefetch" href="/notepad/assets/js/53.b9291662.js"><link rel="prefetch" href="/notepad/assets/js/54.adf368fd.js"><link rel="prefetch" href="/notepad/assets/js/55.7b43fc99.js"><link rel="prefetch" href="/notepad/assets/js/56.40f4e551.js"><link rel="prefetch" href="/notepad/assets/js/57.283e1e67.js"><link rel="prefetch" href="/notepad/assets/js/58.60dd1afe.js"><link rel="prefetch" href="/notepad/assets/js/59.f1434f61.js"><link rel="prefetch" href="/notepad/assets/js/6.466d8455.js"><link rel="prefetch" href="/notepad/assets/js/7.f05a3669.js"><link rel="prefetch" href="/notepad/assets/js/8.5d885b12.js"><link rel="prefetch" href="/notepad/assets/js/9.5e35ba9f.js">
+    <link rel="stylesheet" href="/notepad/assets/css/0.styles.e4f7a2f2.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/notepad/" class="home-link router-link-active"><!----> <span class="site-name">notepad</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/notepad/git/" class="nav-link">
+  Git
+</a></div><div class="nav-item"><a href="/notepad/ruby/" class="nav-link">
+  Ruby
+</a></div><div class="nav-item"><a href="/notepad/rails/" class="nav-link router-link-active">
+  Rails
+</a></div><div class="nav-item"><a href="/notepad/javascript/" class="nav-link">
+  Javascript
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="More" class="dropdown-title"><span class="title">More</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/notepad/roadmap/" class="nav-link">
+  開發者路線指引
+</a></li><li class="dropdown-item"><!----> <a href="/notepad/basic-for-web-developers/" class="nav-link">
+  網頁基礎(HTML&amp;CSS)
+</a></li><li class="dropdown-item"><!----> <a href="/notepad/fullstack-camp/" class="nav-link">
+  全棧營(Rails101)
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/notepad/git/" class="nav-link">
+  Git
+</a></div><div class="nav-item"><a href="/notepad/ruby/" class="nav-link">
+  Ruby
+</a></div><div class="nav-item"><a href="/notepad/rails/" class="nav-link router-link-active">
+  Rails
+</a></div><div class="nav-item"><a href="/notepad/javascript/" class="nav-link">
+  Javascript
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="More" class="dropdown-title"><span class="title">More</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/notepad/roadmap/" class="nav-link">
+  開發者路線指引
+</a></li><li class="dropdown-item"><!----> <a href="/notepad/basic-for-web-developers/" class="nav-link">
+  網頁基礎(HTML&amp;CSS)
+</a></li><li class="dropdown-item"><!----> <a href="/notepad/fullstack-camp/" class="nav-link">
+  全棧營(Rails101)
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Gem</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/notepad/rails/gem/prawn.html" class="sidebar-link">prawn</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Deploy</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/notepad/rails/deploy/ubuntu1804_rails_script.html" class="sidebar-link">Rails Ubuntu Deploy Script</a></li><li><a href="/notepad/rails/deploy/digitalocean_new_server_config.html" class="sidebar-link">Rails DigitalOcean deploy</a></li><li><a href="/notepad/rails/deploy/03.html" aria-current="page" class="active sidebar-link">Rails Ubuntu Deploy</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/notepad/rails/deploy/03.html#零、主機及設定值" class="sidebar-link">零、主機及設定值</a></li><li class="sidebar-sub-header"><a href="/notepad/rails/deploy/03.html#一、設定" class="sidebar-link">一、設定</a></li><li class="sidebar-sub-header"><a href="/notepad/rails/deploy/03.html#二、安裝" class="sidebar-link">二、安裝</a></li><li class="sidebar-sub-header"><a href="/notepad/rails/deploy/03.html#三、檢查" class="sidebar-link">三、檢查</a></li><li class="sidebar-sub-header"><a href="/notepad/rails/deploy/03.html#四、可選項目" class="sidebar-link">四、可選項目</a></li><li class="sidebar-sub-header"><a href="/notepad/rails/deploy/03.html#五、-client-端部署準備" class="sidebar-link">五、 Client 端部署準備</a></li><li class="sidebar-sub-header"><a href="/notepad/rails/deploy/03.html#六、開始部署" class="sidebar-link">六、開始部署</a></li><li class="sidebar-sub-header"><a href="/notepad/rails/deploy/03.html#七、後續" class="sidebar-link">七、後續</a></li></ul></li><li><a href="/notepad/rails/deploy/04.html" class="sidebar-link">Linode StackScripts 範例</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Others</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/notepad/rails/others/migration.html" class="sidebar-link">Migration Cheat Sheet</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="rails-ubuntu-deploy"><a href="#rails-ubuntu-deploy" class="header-anchor">#</a> Rails Ubuntu Deploy</h1> <blockquote><p>Ubuntu 20.04 建立 Rails Production 環境</p></blockquote> <h2 id="零、主機及設定值"><a href="#零、主機及設定值" class="header-anchor">#</a> 零、主機及設定值</h2> <h3 id="主機資訊"><a href="#主機資訊" class="header-anchor">#</a> 主機資訊</h3> <ul><li>Linode
+<ul><li>Ubuntu 20.04 LTS</li> <li>1 CPU</li> <li>50GB Storage</li> <li>2GB RAM</li> <li>Tokyo 2, JP</li></ul></li></ul> <h3 id="範例"><a href="#範例" class="header-anchor">#</a> 範例</h3> <ul><li>Server IP = 111.111.111.111</li> <li>Root Password: firstapp123</li> <li>Ruby = 2.７.1</li> <li>ProjectName = firstApp</li></ul> <h2 id="一、設定"><a href="#一、設定" class="header-anchor">#</a> 一、設定</h2> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">ssh</span> root@111.111.111.111
+adduser deploy
+<span class="token comment"># enter password: ex. deploy123</span>
+adduser deploy <span class="token function">sudo</span>
+<span class="token builtin class-name">exit</span> <span class="token comment"># or ctrl+d</span>
+ssh-copy-id deploy@111.111.111.111
+<span class="token comment"># 會提示輸入密碼</span>
+<span class="token function">ssh</span> deploy@111.111.111.111
+</code></pre></div><h2 id="二、安裝"><a href="#二、安裝" class="header-anchor">#</a> 二、安裝</h2> <p>請確保使用 deploy 登入</p> <h3 id="安裝相關套件"><a href="#安裝相關套件" class="header-anchor">#</a> 安裝相關套件</h3> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token comment"># Set Timezone &amp; Language</span>
+<span class="token function">sudo</span> timedatectl set-timezone Asia/Taipei
+<span class="token function">sudo</span> locale-gen zh_TW zh_TW.UTF-8
+<span class="token comment"># Adding Node.js repository</span>
+<span class="token function">curl</span> -sL https://deb.nodesource.com/setup_12.x <span class="token operator">|</span> <span class="token function">sudo</span> -E <span class="token function">bash</span> -
+<span class="token comment"># Adding Yarn repository</span>
+<span class="token function">curl</span> -sS https://dl.yarnpkg.com/debian/pubkey.gpg <span class="token operator">|</span> <span class="token function">sudo</span> apt-key <span class="token function">add</span> -
+<span class="token builtin class-name">echo</span> <span class="token string">&quot;deb https://dl.yarnpkg.com/debian/ stable main&quot;</span> <span class="token operator">|</span> <span class="token function">sudo</span> <span class="token function">tee</span> /etc/apt/sources.list.d/yarn.list
+<span class="token comment"># Refresh our packages list with the new repositories</span>
+<span class="token function">sudo</span> <span class="token function">apt</span> update
+<span class="token comment"># Install our dependencies for compiiling Ruby along with Node.js and Yarn</span>
+<span class="token function">sudo</span> <span class="token function">apt</span> <span class="token function">install</span> -y git-core <span class="token function">curl</span> zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev software-properties-common libffi-dev dirmngr gnupg gnupg2 apt-transport-https ca-certificates nodejs <span class="token function">yarn</span>
+</code></pre></div><h3 id="安裝-rvm、ruby-及-bundler"><a href="#安裝-rvm、ruby-及-bundler" class="header-anchor">#</a> 安裝 rvm、ruby 及 bundler</h3> <div class="language-sh extra-class"><pre class="language-sh"><code>gpg2 --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+<span class="token function">sudo</span> <span class="token punctuation">\</span>curl -sSL https://get.rvm.io <span class="token operator">|</span> <span class="token function">bash</span> -s stable
+<span class="token builtin class-name">source</span> /home/deploy/.rvm/scripts/rvm
+rvm <span class="token function">install</span> <span class="token number">2.7</span>.1
+<span class="token comment"># rvm list 檢查</span>
+gem <span class="token function">install</span> bundler
+</code></pre></div><h2 id="三、檢查"><a href="#三、檢查" class="header-anchor">#</a> 三、檢查</h2> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">date</span>  <span class="token operator">&amp;&amp;</span> <span class="token punctuation">\</span>
+ruby -v  <span class="token operator">&amp;&amp;</span> <span class="token punctuation">\</span>
+bundle -v  
+</code></pre></div><h2 id="四、可選項目"><a href="#四、可選項目" class="header-anchor">#</a> 四、可選項目</h2> <h3 id="_1-nginx"><a href="#_1-nginx" class="header-anchor">#</a> 1. nginx</h3> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">sudo</span> <span class="token function">apt</span> -y <span class="token function">install</span> nginx
+</code></pre></div><h3 id="_2-redis-server"><a href="#_2-redis-server" class="header-anchor">#</a> 2. redis server</h3> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">sudo</span> add-apt-repository -y ppa:chris-lea/redis-server
+<span class="token function">sudo</span> <span class="token function">apt</span> <span class="token function">install</span> -y redis-server redis-tools
+</code></pre></div><h3 id="_3-postgresql"><a href="#_3-postgresql" class="header-anchor">#</a> 3. postgresql</h3> <ol><li>安裝 postgresql</li></ol> <div class="language- extra-class"><pre class="language-text"><code>sudo apt-get -y install postgresql postgresql-contrib libpq-dev
+</code></pre></div><ol start="2"><li>postgresql 建立專案 db</li></ol> <div class="custom-block tip"><p class="custom-block-title">提示</p> <p>需要替換『firstApp』</p></div> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">sudo</span> <span class="token function">su</span> - postgres
+createuser --pwprompt deploy
+<span class="token comment"># 範例設定密碼： deploy321</span>
+createdb -O deploy firstApp
+<span class="token builtin class-name">exit</span>
+</code></pre></div><h2 id="五、-client-端部署準備"><a href="#五、-client-端部署準備" class="header-anchor">#</a> 五、 Client 端部署準備</h2> <h3 id="_1-安裝-capstrano-相關-gem"><a href="#_1-安裝-capstrano-相關-gem" class="header-anchor">#</a> 1. 安裝 Capstrano 相關 gem</h3> <div class="language-ruby extra-class"><pre class="language-ruby"><code>group <span class="token symbol">:development</span> <span class="token keyword">do</span>
+  gem <span class="token string">&quot;capistrano&quot;</span><span class="token punctuation">,</span> <span class="token keyword">require</span><span class="token punctuation">:</span> <span class="token boolean">false</span>
+  gem <span class="token string">'capistrano-rvm'</span><span class="token punctuation">,</span> <span class="token keyword">require</span><span class="token punctuation">:</span> <span class="token boolean">false</span>
+  gem <span class="token string">'capistrano-rails'</span><span class="token punctuation">,</span> <span class="token keyword">require</span><span class="token punctuation">:</span> <span class="token boolean">false</span>
+  gem <span class="token string">'capistrano-bundler'</span><span class="token punctuation">,</span> <span class="token keyword">require</span><span class="token punctuation">:</span> <span class="token boolean">false</span>
+  gem <span class="token string">'capistrano3-puma'</span><span class="token punctuation">,</span> <span class="token keyword">require</span><span class="token punctuation">:</span> <span class="token boolean">false</span>
+  gem <span class="token string">'capistrano-rails-console'</span><span class="token punctuation">,</span> <span class="token keyword">require</span><span class="token punctuation">:</span> <span class="token boolean">false</span>
+  gem <span class="token string">'capistrano-sidekiq'</span><span class="token punctuation">,</span> <span class="token keyword">require</span><span class="token punctuation">:</span> <span class="token boolean">false</span>
+<span class="token keyword">end</span>
+</code></pre></div><h3 id="_2-設定-capfile"><a href="#_2-設定-capfile" class="header-anchor">#</a> 2. 設定 Capfile</h3> <p>於 require 區塊加入</p> <div class="language-ruby extra-class"><pre class="language-ruby"><code><span class="token keyword">require</span> <span class="token string">'capistrano/rails'</span>
+<span class="token keyword">require</span> <span class="token string">'capistrano/rvm'</span>
+<span class="token keyword">require</span> <span class="token string">'capistrano/bundler'</span>
+<span class="token keyword">require</span> <span class="token string">'capistrano/rails/assets'</span>
+<span class="token keyword">require</span> <span class="token string">'capistrano/rails/migrations'</span>
+<span class="token keyword">require</span> <span class="token string">'capistrano/rails/console'</span>
+<span class="token keyword">require</span> <span class="token string">'capistrano/puma'</span>
+install_plugin <span class="token constant">Capistrano</span><span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token constant">Puma</span>
+<span class="token keyword">require</span> <span class="token string">'capistrano/sidekiq'</span>
+</code></pre></div><h3 id="_3-設定-config-deploy-rb"><a href="#_3-設定-config-deploy-rb" class="header-anchor">#</a> 3. 設定 config/deploy.rb</h3> <div class="custom-block tip"><p class="custom-block-title">提示</p> <p>需要替換『firstApp』和『git@github.com:anxgang/first_app.git』</p></div> <div class="language-ruby extra-class"><pre class="language-ruby"><code>lock <span class="token string">&quot;~&gt; 3.14.1&quot;</span>
+
+set <span class="token symbol">:application</span><span class="token punctuation">,</span> <span class="token string">&quot;firstApp&quot;</span>
+set <span class="token symbol">:repo_url</span><span class="token punctuation">,</span> <span class="token string">&quot;git@github.com:anxgang/first_app.git&quot;</span>
+
+set <span class="token symbol">:user</span><span class="token punctuation">,</span> <span class="token string">'deploy'</span>
+set <span class="token symbol">:rails_env</span><span class="token punctuation">,</span> <span class="token string">&quot;production&quot;</span>
+
+set <span class="token symbol">:deploy_to</span><span class="token punctuation">,</span> <span class="token string">&quot;/home/<span class="token interpolation"><span class="token delimiter tag">#{</span>fetch<span class="token punctuation">(</span><span class="token symbol">:user</span><span class="token punctuation">)</span><span class="token delimiter tag">}</span></span>/<span class="token interpolation"><span class="token delimiter tag">#{</span>fetch<span class="token punctuation">(</span><span class="token symbol">:application</span><span class="token punctuation">)</span><span class="token delimiter tag">}</span></span>&quot;</span>
+
+append <span class="token symbol">:linked_files</span><span class="token punctuation">,</span> <span class="token string">&quot;config/master.key&quot;</span>
+append <span class="token symbol">:linked_dirs</span><span class="token punctuation">,</span> <span class="token string">&quot;log&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;tmp/pids&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;tmp/cache&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;tmp/sockets&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;public/system&quot;</span>
+
+namespace <span class="token symbol">:deploy</span> <span class="token keyword">do</span>
+  <span class="token comment"># 覆蓋原本的 puma 指令</span>
+  desc <span class="token string">'Restart application'</span>
+    task <span class="token symbol">:restart</span> <span class="token keyword">do</span>
+      on roles<span class="token punctuation">(</span><span class="token symbol">:app</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token keyword">in</span><span class="token punctuation">:</span> <span class="token symbol">:sequence</span><span class="token punctuation">,</span> wait<span class="token punctuation">:</span> <span class="token number">5</span> <span class="token keyword">do</span>
+      invoke <span class="token string">'puma:restart'</span>
+    <span class="token keyword">end</span>
+  <span class="token keyword">end</span>
+  <span class="token comment"># 上傳 master.key </span>
+  namespace <span class="token symbol">:check</span> <span class="token keyword">do</span>
+    before <span class="token symbol">:linked_files</span><span class="token punctuation">,</span> <span class="token symbol">:set_master_key</span> <span class="token keyword">do</span>
+      on roles<span class="token punctuation">(</span><span class="token symbol">:app</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token keyword">in</span><span class="token punctuation">:</span> <span class="token symbol">:sequence</span><span class="token punctuation">,</span> wait<span class="token punctuation">:</span> <span class="token number">10</span> <span class="token keyword">do</span>
+        <span class="token keyword">unless</span> test<span class="token punctuation">(</span><span class="token string">&quot;[ -f <span class="token interpolation"><span class="token delimiter tag">#{</span>shared_path<span class="token delimiter tag">}</span></span>/config/master.key ]&quot;</span><span class="token punctuation">)</span>
+          upload<span class="token operator">!</span> <span class="token string">'config/master.key'</span><span class="token punctuation">,</span> <span class="token string">&quot;<span class="token interpolation"><span class="token delimiter tag">#{</span>shared_path<span class="token delimiter tag">}</span></span>/config/master.key&quot;</span>
+        <span class="token keyword">end</span>
+      <span class="token keyword">end</span>
+    <span class="token keyword">end</span>
+  <span class="token keyword">end</span>
+<span class="token keyword">end</span>
+
+namespace <span class="token symbol">:nginx</span> <span class="token keyword">do</span>
+  <span class="token comment"># 建立軟連結 (僅首次需使用)</span>
+  desc <span class="token string">'Setup symlink to nginx'</span>
+  task <span class="token symbol">:config</span> <span class="token keyword">do</span>
+    on roles<span class="token punctuation">(</span><span class="token symbol">:app</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token keyword">in</span><span class="token punctuation">:</span> <span class="token symbol">:sequence</span><span class="token punctuation">,</span> wait<span class="token punctuation">:</span> <span class="token number">10</span> <span class="token keyword">do</span>
+      <span class="token keyword">unless</span> test<span class="token punctuation">(</span><span class="token string">&quot;[ -f /etc/nginx/sites-enabled/<span class="token interpolation"><span class="token delimiter tag">#{</span>fetch<span class="token punctuation">(</span><span class="token symbol">:application</span><span class="token punctuation">)</span><span class="token delimiter tag">}</span></span> ]&quot;</span><span class="token punctuation">)</span>
+        execute <span class="token symbol">:sudo</span><span class="token punctuation">,</span> <span class="token symbol">:ln</span><span class="token punctuation">,</span> <span class="token string">'-nfs'</span><span class="token punctuation">,</span> 
+          <span class="token string">&quot;/home/<span class="token interpolation"><span class="token delimiter tag">#{</span>fetch<span class="token punctuation">(</span><span class="token symbol">:user</span><span class="token punctuation">)</span><span class="token delimiter tag">}</span></span>/<span class="token interpolation"><span class="token delimiter tag">#{</span>fetch<span class="token punctuation">(</span><span class="token symbol">:application</span><span class="token punctuation">)</span><span class="token delimiter tag">}</span></span>/current/config/nginx.conf&quot;</span><span class="token punctuation">,</span> 
+          <span class="token string">&quot;/etc/nginx/sites-enabled/<span class="token interpolation"><span class="token delimiter tag">#{</span>fetch<span class="token punctuation">(</span><span class="token symbol">:application</span><span class="token punctuation">)</span><span class="token delimiter tag">}</span></span>&quot;</span>
+      <span class="token keyword">end</span>
+    <span class="token keyword">end</span>
+  <span class="token keyword">end</span>
+  <span class="token comment"># Nginx 相關指令</span>
+  <span class="token punctuation">[</span><span class="token symbol">:start</span><span class="token punctuation">,</span> <span class="token symbol">:stop</span><span class="token punctuation">,</span> <span class="token symbol">:restart</span><span class="token punctuation">,</span> <span class="token symbol">:reload</span><span class="token punctuation">,</span> <span class="token symbol">:status</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token keyword">each</span> <span class="token keyword">do</span> <span class="token operator">|</span>nginx_action<span class="token operator">|</span>
+    desc <span class="token string">&quot;Nginx <span class="token interpolation"><span class="token delimiter tag">#{</span>nginx_action<span class="token delimiter tag">}</span></span>&quot;</span>
+    task nginx_action <span class="token keyword">do</span>
+      on roles<span class="token punctuation">(</span><span class="token symbol">:app</span><span class="token punctuation">)</span> <span class="token keyword">do</span>
+        execute <span class="token symbol">:sudo</span><span class="token punctuation">,</span> <span class="token symbol">:service</span><span class="token punctuation">,</span> <span class="token symbol">:nginx</span><span class="token punctuation">,</span> nginx_action
+      <span class="token keyword">end</span>
+    <span class="token keyword">end</span>
+  <span class="token keyword">end</span>
+<span class="token keyword">end</span>
+</code></pre></div><h3 id="_4-設定-config-deploy-produciton-rb"><a href="#_4-設定-config-deploy-produciton-rb" class="header-anchor">#</a> 4. 設定 config/deploy/produciton.rb</h3> <div class="custom-block tip"><p class="custom-block-title">提示</p> <p>需替換 主機IP 『111.111.111.111』</p></div> <div class="language-ruby extra-class"><pre class="language-ruby"><code>role <span class="token symbol">:app</span><span class="token punctuation">,</span> <span class="token string">%w(deploy@111.111.111.111)</span>
+role <span class="token symbol">:web</span><span class="token punctuation">,</span> <span class="token string">%w(deploy@111.111.111.111)</span>
+role <span class="token symbol">:db</span><span class="token punctuation">,</span> <span class="token string">%w(deploy@111.111.111.111)</span>
+</code></pre></div><div class="custom-block tip"><p class="custom-block-title">提示</p> <p>如需要也可設定 staging.rb</p></div> <h3 id="修改-db-設定"><a href="#修改-db-設定" class="header-anchor">#</a> 修改 db 設定</h3> <p>config/database.yml</p> <div class="language-yml extra-class"><pre class="language-yml"><code><span class="token key atrule">production</span><span class="token punctuation">:</span>
+  <span class="token key atrule">&lt;&lt;</span><span class="token punctuation">:</span> <span class="token important">*default</span>
+  <span class="token key atrule">adapter</span><span class="token punctuation">:</span> postgresql
+  <span class="token key atrule">encoding</span><span class="token punctuation">:</span> unicode
+  <span class="token key atrule">database</span><span class="token punctuation">:</span> firstApp
+  <span class="token key atrule">pool</span><span class="token punctuation">:</span> <span class="token number">5</span>
+  <span class="token key atrule">username</span><span class="token punctuation">:</span> &lt;%= Rails.application.credentials.pg<span class="token punctuation">[</span><span class="token punctuation">:</span>username<span class="token punctuation">]</span> %<span class="token punctuation">&gt;</span>
+  <span class="token key atrule">password</span><span class="token punctuation">:</span> &lt;%= Rails.application.credentials.pg<span class="token punctuation">[</span><span class="token punctuation">:</span>password<span class="token punctuation">]</span> %<span class="token punctuation">&gt;</span>
+</code></pre></div><h3 id="調整-credentials"><a href="#調整-credentials" class="header-anchor">#</a> 調整 credentials</h3> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token assign-left variable">EDITOR</span><span class="token operator">=</span><span class="token string">'code --wait'</span> rails credentials:edit
+</code></pre></div><p>加入</p> <div class="language-yml extra-class"><pre class="language-yml"><code><span class="token key atrule">pg</span><span class="token punctuation">:</span>
+  <span class="token key atrule">username</span><span class="token punctuation">:</span> <span class="token string">'deploy'</span>
+  <span class="token key atrule">password</span><span class="token punctuation">:</span> <span class="token string">'deploy321'</span>
+</code></pre></div><h3 id="加入-config-nginx-conf"><a href="#加入-config-nginx-conf" class="header-anchor">#</a> 加入 config/nginx.conf</h3> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>請替換 『 firstapp.anxgang.com 』</p></div> <div class="language-py extra-class"><pre class="language-py"><code>upstream firstApp <span class="token punctuation">{</span>  
+  server unix<span class="token punctuation">:</span><span class="token operator">//</span><span class="token operator">/</span>home<span class="token operator">/</span>deploy<span class="token operator">/</span>firstApp<span class="token operator">/</span>shared<span class="token operator">/</span>tmp<span class="token operator">/</span>sockets<span class="token operator">/</span>puma<span class="token punctuation">.</span>sock<span class="token punctuation">;</span>
+  <span class="token comment"># server firstApp:3000; # optional</span>
+<span class="token punctuation">}</span> 
+server <span class="token punctuation">{</span>  
+  <span class="token comment"># define your domain  </span>
+  server_name firstapp<span class="token punctuation">.</span>anxgang<span class="token punctuation">.</span>com<span class="token punctuation">;</span>
+  <span class="token comment"># define the public application root  </span>
+  root   <span class="token operator">/</span>home<span class="token operator">/</span>deploy<span class="token operator">/</span>firstApp<span class="token operator">/</span>current<span class="token operator">/</span>public<span class="token punctuation">;</span>  
+  index  index<span class="token punctuation">.</span>html<span class="token punctuation">;</span>
+  <span class="token comment"># define where Nginx should write its logs  </span>
+  access_log <span class="token operator">/</span>home<span class="token operator">/</span>deploy<span class="token operator">/</span>firstApp<span class="token operator">/</span>current<span class="token operator">/</span>log<span class="token operator">/</span>nginx<span class="token punctuation">.</span>access<span class="token punctuation">.</span>log<span class="token punctuation">;</span>  
+  error_log <span class="token operator">/</span>home<span class="token operator">/</span>deploy<span class="token operator">/</span>firstApp<span class="token operator">/</span>current<span class="token operator">/</span>log<span class="token operator">/</span>nginx<span class="token punctuation">.</span>error<span class="token punctuation">.</span>log<span class="token punctuation">;</span>
+    
+  <span class="token comment"># deny requests for files that should never be accessed  </span>
+  location <span class="token operator">~</span> <span class="token operator">/</span>\<span class="token punctuation">.</span> <span class="token punctuation">{</span>    
+      deny <span class="token builtin">all</span><span class="token punctuation">;</span>  
+  <span class="token punctuation">}</span>
+  location <span class="token operator">~</span><span class="token operator">*</span> <span class="token operator">^</span><span class="token punctuation">.</span><span class="token operator">+</span>\<span class="token punctuation">.</span><span class="token punctuation">(</span>rb<span class="token operator">|</span>log<span class="token punctuation">)</span>$ <span class="token punctuation">{</span>    
+      deny <span class="token builtin">all</span><span class="token punctuation">;</span>  
+  <span class="token punctuation">}</span>  
+
+  <span class="token comment"># serve static (compiled) assets directly if they exist (for rails production)  </span>
+  location <span class="token operator">~</span> <span class="token operator">^</span><span class="token operator">/</span><span class="token punctuation">(</span>assets<span class="token operator">|</span>images<span class="token operator">|</span>javascripts<span class="token operator">|</span>stylesheets<span class="token operator">|</span>packs<span class="token operator">|</span>system<span class="token punctuation">)</span><span class="token operator">/</span>   <span class="token punctuation">{</span>    
+    try_files $uri @rails<span class="token punctuation">;</span>     
+    access_log off<span class="token punctuation">;</span>    
+    gzip_static on<span class="token punctuation">;</span> 
+    <span class="token comment"># to serve pre-gzipped version     </span>
+    expires <span class="token builtin">max</span><span class="token punctuation">;</span>    
+    add_header Cache<span class="token operator">-</span>Control public<span class="token punctuation">;</span>     
+    
+    add_header Last<span class="token operator">-</span>Modified <span class="token string">&quot;&quot;</span><span class="token punctuation">;</span>    
+    add_header ETag <span class="token string">&quot;&quot;</span><span class="token punctuation">;</span>    
+    <span class="token keyword">break</span><span class="token punctuation">;</span>  
+  <span class="token punctuation">}</span> 
+  
+  <span class="token comment"># send non-static file requests to the app server  </span>
+  location <span class="token operator">/</span> <span class="token punctuation">{</span>    
+    try_files $uri @rails<span class="token punctuation">;</span>  
+  <span class="token punctuation">}</span>   
+  location @rails <span class="token punctuation">{</span>    
+    proxy_set_header  X<span class="token operator">-</span>Real<span class="token operator">-</span>IP  $remote_addr<span class="token punctuation">;</span>    
+    proxy_set_header  X<span class="token operator">-</span>Forwarded<span class="token operator">-</span>For $proxy_add_x_forwarded_for<span class="token punctuation">;</span>         
+    proxy_set_header Host $http_host<span class="token punctuation">;</span>    
+    proxy_redirect off<span class="token punctuation">;</span>    
+    proxy_pass http<span class="token punctuation">:</span><span class="token operator">//</span>firstApp<span class="token punctuation">;</span>  
+  <span class="token punctuation">}</span>
+  location <span class="token operator">/</span>cable <span class="token punctuation">{</span>
+    proxy_pass http<span class="token punctuation">:</span><span class="token operator">//</span>firstApp<span class="token punctuation">;</span>
+    proxy_http_version <span class="token number">1.1</span><span class="token punctuation">;</span>
+    proxy_set_header Upgrade $http_upgrade<span class="token punctuation">;</span>
+    proxy_set_header Connection <span class="token string">&quot;upgrade&quot;</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  error_page <span class="token number">500</span> <span class="token number">502</span> <span class="token number">503</span> <span class="token number">504</span> <span class="token operator">/</span><span class="token number">500.</span>html<span class="token punctuation">;</span>
+  client_max_body_size 10M<span class="token punctuation">;</span>
+  keepalive_timeout <span class="token number">10</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="六、開始部署"><a href="#六、開始部署" class="header-anchor">#</a> 六、開始部署</h2> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">git</span> <span class="token function">add</span> <span class="token builtin class-name">.</span>
+<span class="token function">git</span> commit -m <span class="token string">&quot;commit message&quot;</span>
+<span class="token function">git</span> push origin master
+</code></pre></div><h3 id="首次部署"><a href="#首次部署" class="header-anchor">#</a> 首次部署</h3> <p>需要 deploy:check ，會建立一些資料夾、軟連結，並上傳 master.key</p> <div class="language-sh extra-class"><pre class="language-sh"><code>cap production deploy:check
+cap production deploy
+</code></pre></div><h3 id="後續部署"><a href="#後續部署" class="header-anchor">#</a> 後續部署</h3> <div class="language-sh extra-class"><pre class="language-sh"><code>cap production deploy
+</code></pre></div><h3 id="為專案建立-symlink"><a href="#為專案建立-symlink" class="header-anchor">#</a> 為專案建立 symlink</h3> <div class="custom-block tip"><p class="custom-block-title">提示</p> <p>需要替換『 firstApp 』</p></div> <p>登入 server</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">ssh</span> deploy@111.111.111.111
+</code></pre></div><p>設定軟連結</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">sudo</span> <span class="token function">rm</span> /etc/nginx/sites-enabled/default
+<span class="token function">sudo</span> <span class="token function">ln</span> -nfs <span class="token string">&quot;/home/deploy/firstApp/current/config/nginx.conf&quot;</span> <span class="token string">&quot;/etc/nginx/sites-enabled/firstApp&quot;</span>
+<span class="token comment"># ls -lah /etc/nginx/sites-enabled/firstApp 確認一下</span>
+</code></pre></div><p>重啟伺服器</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">sudo</span> <span class="token function">service</span> nginx restart
+</code></pre></div><p>這時候可以連到 http://111.111.111.111 看看網頁是否正常<br>
+若有問題 可至 firstApp/current/log 下面去查看相關的 log</p> <h2 id="七、後續"><a href="#七、後續" class="header-anchor">#</a> 七、後續</h2> <h3 id="domain"><a href="#domain" class="header-anchor">#</a> Domain</h3> <ul><li>freenom - 有免費 domain 可註冊使用，付費的也很便宜</li></ul> <h3 id="https"><a href="#https" class="header-anchor">#</a> Https</h3> <p>以下擇一</p> <ul><li>cloudflare - 可直接設定 https，nginx 不用調整</li> <li>certbot - 可快速設定 Let’s Encrypt 提供的 https 驗證服務，插入設定值到 nginx.conf 並產生定時重新驗證的排程</li></ul></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">最後更新時間:</span> <span class="time">2020-9-8 11:32:19</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/notepad/rails/deploy/digitalocean_new_server_config.html" class="prev">
+        Rails DigitalOcean deploy
+      </a></span> <span class="next"><a href="/notepad/rails/deploy/04.html">
+        Linode StackScripts 範例
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/notepad/assets/js/app.abc900cd.js" defer></script><script src="/notepad/assets/js/2.de767da7.js" defer></script><script src="/notepad/assets/js/45.c1b3a767.js" defer></script>
+  </body>
+</html>
